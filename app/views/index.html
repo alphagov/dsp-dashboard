@@ -1,20 +1,98 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
 
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
-
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
-  </div>
+<h2 class="govuk-heading-l">GOV.UK Design System</h2>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    £38 million
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    Projected benefits for FY 23/24
+  </span>
 </div>
 
+<h2 class="govuk-heading-l">GOV.UK Forms</h2>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    11
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    Forms published
+  </span>
+</div>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    7334
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    Submissions
+  </span>
+</div>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    75
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    Processor days saved
+  </span>
+</div>
+
+<h2 class="govuk-heading-l">GOV.UK Notify</h2>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    £63 million
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    Projected savings FY23/24
+  </span>
+</div>
+
+<h2 class="govuk-heading-l">GOV.UK Pay</h2>
+<h3 class="govuk-heading-m">August 2023</h2>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    11
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    new services
+  </span>
+</div>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    1.9 million
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    payments
+  </span>
+</div>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    £100 million
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    processed
+  </span>
+</div>
+<div class="gem-c-big-number govuk-!-margin-bottom-8">
+  <span class="gem-c-big-number__value">
+    £4.3 billion
+  </span>
+  <span class="govuk-visually-hidden">&nbsp;</span>
+  <span class="gem-c-big-number__label">
+    total payments
+  </span>
+</div>
 {% endblock %}
