@@ -1,3 +1,9 @@
+.gem-c-big-numbers {
+  display: inline-flex;
+  flex-flow: row wrap;
+  gap: govuk-px-to-rem(60px);
+}
+
 .gem-c-big-number {
   margin-bottom: govuk-spacing(3);
   @include govuk-text-colour;
@@ -7,11 +13,11 @@
   @include govuk-font($size: false, $weight: bold);
   line-height: 1;
   font-size: 80px;
-  font-size: govuk-px-to-rem(80px);
+  font-size: govuk-px-to-rem(75px);
 }
 
 .gem-c-big-number__label {
-  @include govuk-font($size: 19, $weight: bold);
+  @include govuk-font($size: 19, $weight: normal);
 
   // This pseudo element is to bypass an issue with NVDA where block level elements are dictated separately.
   // What's happening here is that the label and the number technically have an inline relationship
@@ -22,38 +28,38 @@
   }
 }
 
-.gem-c-big-number__link {
-  display: inline-block;
-  text-decoration: none;
+// .gem-c-big-number__link {
+//   display: inline-block;
+//   text-decoration: none;
 
-  // Add govuk-link hover decoration to main value if no label present but a href attribute is
-  .gem-c-big-number__value--decorated {
-    @include govuk-link-decoration;
-    @include govuk-link-style-no-underline;
-  }
+//   // Add govuk-link hover decoration to main value if no label present but a href attribute is
+//   .gem-c-big-number__value--decorated {
+//     @include govuk-link-decoration;
+//     @include govuk-link-style-no-underline;
+//   }
 
-  .gem-c-big-number__label {
-    @include govuk-link-decoration;
-  }
+//   .gem-c-big-number__label {
+//     @include govuk-link-decoration;
+//   }
 
-  &:hover,
-  &:active {
+//   &:hover,
+//   &:active {
 
-    .gem-c-big-number__label,
-    .gem-c-big-number__value--decorated {
-      @include govuk-link-hover-decoration;
-    }
-  }
+//     .gem-c-big-number__label,
+//     .gem-c-big-number__value--decorated {
+//       @include govuk-link-hover-decoration;
+//     }
+//   }
 
-  &:focus,
-  &:focus:hover {
+//   &:focus,
+//   &:focus:hover {
 
-    .gem-c-big-number__label,
-    .gem-c-big-number__value--decorated {
-      text-decoration: none;
-    }
-  }
-}
+//     .gem-c-big-number__label,
+//     .gem-c-big-number__value--decorated {
+//       text-decoration: none;
+//     }
+//   }
+// }
 
 .gem-c-big-number__suffix {
   vertical-align: middle;
