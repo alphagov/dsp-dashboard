@@ -5,3 +5,20 @@
 
 // Add extra styles here
 @import "big-number";
+
+.govuk-template__body {
+  background-color: black;
+}
+
+.govuk-header {
+  background-color: black;
+  border-color: black;
+}
+
+.govuk-width-container * {
+  color: white !important;
+}
+
+.govuk-footer {
+  display: none;
+}

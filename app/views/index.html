@@ -60,7 +60,7 @@
       <div class="gem-c-big-numbers">
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            75
+            {{ ((21451*2)/60/7) | round(0, "floor") }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -69,7 +69,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            16,085
+            21,451
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -141,22 +141,46 @@
 
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l">GOV.UK Design System</h2>
-      <div class="gem-c-big-number govuk-!-margin-bottom-8">
-        <span class="gem-c-big-number__value">
-          £38m
-        </span>
-        <span class="govuk-visually-hidden">&nbsp;</span>
-        <span class="gem-c-big-number__label">
-          projected benefits for FY 23/24
-        </span>
+      <div class="gem-c-big-numbers">
+
+        <div class="gem-c-big-number govuk-!-margin-bottom-8">
+          <span class="gem-c-big-number__value">
+            £38m
+          </span>
+          <span class="govuk-visually-hidden">&nbsp;</span>
+          <span class="gem-c-big-number__label">
+            projected benefits for FY 23/24
+          </span>
+        </div>
+        <div class="gem-c-big-number govuk-!-margin-bottom-8">
+          <span class="gem-c-big-number__value">
+            79,732
+          </span>
+          <span class="govuk-visually-hidden">&nbsp;</span>
+          <span class="gem-c-big-number__label">
+            weekly installs
+          </span>
+        </div>
+        <div class="gem-c-big-number govuk-!-margin-bottom-8">
+          <span class="gem-c-big-number__value">
+            7.3m
+          </span>
+          <span class="govuk-visually-hidden">&nbsp;</span>
+          <span class="gem-c-big-number__label">
+            total downloads
+          </span>
+        </div>
       </div>
     </div>
   </div>
 
-
-  <!-- <p>More data on </p>
+  {#
+  <!-- Forms internal source: https://docs.google.com/spreadsheets/d/1iXwF8Monl4jP3Iu1a9c3PTSYqgccT8s_0s5M4VgORY8/edit#gid=1099651978 -->
+  <p>More data on </p>
   <ul>
     <li><a href="https://www.payments.service.gov.uk/performance">GOV.UK Pay Performance data dashboard</a></li>
     <li><a href="https://www.notifications.service.gov.uk/features/performance">GOV.UK Notify Performance data dashboard</a></li>
-  </ul> -->
+  </ul>
+  #}
+
   {% endblock %}
