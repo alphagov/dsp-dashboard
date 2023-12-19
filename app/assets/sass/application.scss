@@ -6,17 +6,20 @@
 // Add extra styles here
 @import "big-number";
 
+$dark-grey: #1E1F21;
+$white: #fff;
+
 .govuk-template__body {
-  background-color: black;
+  background-color: $dark-grey;
 }
 
 .govuk-header {
-  background-color: black;
-  border-color: black;
+  background-color: $dark-grey;
+  border-color: $dark-grey;
 }
 
 .govuk-width-container * {
-  color: white !important;
+  color: $white !important;
 }
 
 .govuk-footer {
