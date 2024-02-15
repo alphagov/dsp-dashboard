@@ -6,6 +6,10 @@
 // Add extra styles here
 @import "big-number";
 
+html, body {
+  height: 100%;
+}
+
 $dark-grey: #1E1F21;
 $white: #fff;
 
