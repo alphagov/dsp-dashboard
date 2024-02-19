@@ -4,3 +4,12 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+{# This block is only for setting the flag to pull in the Tudour Crown logo #}
+{% block header %}
+{{
+    govukHeader({
+        useTudorCrown: true
+    })
+}}
+{% endblock %}
