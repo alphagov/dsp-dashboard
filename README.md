@@ -1,6 +1,6 @@
 # Platforms and Services dashboard
 
-Built using the [Prototype Toolkit](https://github.com/alphagov/govuk-prototype-kit).
+Built using the [GOV.UK Prototype Kit](https://github.com/alphagov/govuk-prototype-kit).
 
 This is for displaying on internal screens.
 
