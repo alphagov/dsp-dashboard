@@ -7,7 +7,7 @@
 {% block content %}
 
 <div class="govuk-width-container">
-  <h2 class="govuk-heading-m">September 2024</h2>
+  <h1 class="govuk-heading-l">Product performance as of {{ month }} {{ year }}</h1>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
@@ -15,7 +15,7 @@
       <div class="gem-c-big-numbers">
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            £5.7B
+            £{{ totalPaymentAmount }}B
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -24,7 +24,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            89M
+            {{ numberOfPayments }}M
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -33,7 +33,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            1121
+            {{ payNumberOfServices}}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -42,7 +42,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            412
+            {{ payNumberOfOrganisations }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
