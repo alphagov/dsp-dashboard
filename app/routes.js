@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
   res.locals.payNumberOfOrganisations = payData['numberOfOrganisations']
 
   const notifyData = await fetchData('https://www.notifications.service.gov.uk/features/performance.json', 'notifyDataCache')
-  console.log(notifyData)
+
   res.locals.notifyTotalMsgs = (notifyData['total_notifications'] / 1e9).toFixed(1) + "B"
   res.locals.notifyLive = notifyData['count_of_live_services_and_organisations']['services']
   res.locals.notifyOrgs = notifyData['count_of_live_services_and_organisations']['organisations']
