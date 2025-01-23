@@ -4,8 +4,8 @@ Built using the [GOV.UK Prototype Kit](https://github.com/alphagov/govuk-prototy
 
 This is for displaying on internal screens.
 
-This is hand maintained (MVP!) and data is copy pasted from other team's dashboards (see comments in the index.html).
+Data is a mixture of copy pasted from other team's dashboards, and sourced from JSON endpoints for Notify and Pay.
 
 Collaborators can raise PRs and update the code to add new data.
 
-The dashboard auto-deploys on merge on @chao-xian's Railway account.
+The dashboard auto-deploys on merge on DSP's Heroku account.
