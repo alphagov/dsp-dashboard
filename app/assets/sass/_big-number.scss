@@ -10,7 +10,7 @@
 }
 
 .gem-c-big-number__value {
-  @include govuk-font($size: false, $weight: bold);
+  @include govuk-font($size: false, $weight: bold, $tabular: true);
   line-height: 1;
   font-size: 80px;
   font-size: govuk-px-to-rem(75px);
