@@ -9,7 +9,8 @@ router.get('/', async (req, res) => {
   res.locals.month = date.toLocaleString('default', { month: 'long' })
   res.locals.year = date.getFullYear()
 
-  const payData = await fetchData('https://raw.githubusercontent.com/alphagov/pay-product-page/refs/heads/main/data/performance.json', 'payDataCache')
+  const rawPayData = await fetchData('https://api.github.com/repos/alphagov/pay-product-page/contents/data/performance.json?ref=main', 'payDataCache')
+  const payData = JSON.parse(Buffer.from(rawPayData['content'], "base64").toString("utf-8"))
 
   let totalPaymentAmount = payData['totalPaymentAmount'].replace('billion', 'B')
   res.locals.totalPaymentAmount = totalPaymentAmount
