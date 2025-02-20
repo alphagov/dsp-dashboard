@@ -33,7 +33,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            {{ payNumberOfServices}}
+            {{ payNumberOfServices.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -42,7 +42,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            {{ payNumberOfOrganisations }}
+            {{ payNumberOfOrganisations.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -120,7 +120,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            {{ notifyLive }}
+            {{ notifyLive.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -129,7 +129,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            {{ notifyOrgs }}
+            {{ notifyOrgs.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
