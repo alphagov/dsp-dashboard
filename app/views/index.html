@@ -193,3 +193,15 @@
   #}
 
   {% endblock %}
+
+  {% block bodyEnd %}
+    <script>
+      setTimeout(
+        function(){
+          window.location.reload();
+        },
+        // hours * minutes * seconds * milliseconds
+        1 * 60 * 60 * 1000
+      );
+    </script>
+  {% endblock %}
