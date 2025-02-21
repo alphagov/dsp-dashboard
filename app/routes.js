@@ -12,15 +12,15 @@ router.get('/', async (req, res) => {
   const rawPayData = await fetchData('https://api.github.com/repos/alphagov/pay-product-page/contents/data/performance.json?ref=main', 'payDataCache')
   const payData = JSON.parse(Buffer.from(rawPayData['content'], "base64").toString("utf-8"))
 
-  let totalPaymentAmount = payData['totalPaymentAmount'].replace('billion', 'B')
+  let totalPaymentAmount = payData['totalPaymentAmount'].replace(' billion', '&hairsp;B')
   res.locals.totalPaymentAmount = totalPaymentAmount
-  res.locals.numberOfPayments = payData['numberOfPayments'].replace('million', 'M')
+  res.locals.numberOfPayments = payData['numberOfPayments'].replace(' million', '&hairsp;M')
   res.locals.payNumberOfServices = payData['numberOfServices']
   res.locals.payNumberOfOrganisations = payData['numberOfOrganisations']
 
   const notifyData = await fetchData('https://www.notifications.service.gov.uk/features/performance.json', 'notifyDataCache')
 
-  res.locals.notifyTotalMsgs = (notifyData['total_notifications'] / 1e9).toFixed(1) + "B"
+  res.locals.notifyTotalMsgs = (notifyData['total_notifications'] / 1e9).toFixed(1) + "&hairsp;B"
   res.locals.notifyLive = notifyData['count_of_live_services_and_organisations']['services']
   res.locals.notifyOrgs = notifyData['count_of_live_services_and_organisations']['organisations']
 
