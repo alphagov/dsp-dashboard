@@ -11,15 +11,15 @@ router.get('/', async (req, res) => {
 
   const payData = await fetchData('https://raw.githubusercontent.com/alphagov/pay-product-page/refs/heads/main/data/performance.json', 'payDataCache')
 
-  let totalPaymentAmount = payData['totalPaymentAmount'].replace('billion', 'B')
+  let totalPaymentAmount = payData['totalPaymentAmount'].replace(' billion', '&hairsp;B')
   res.locals.totalPaymentAmount = totalPaymentAmount
-  res.locals.numberOfPayments = payData['numberOfPayments'].replace('million', 'M')
+  res.locals.numberOfPayments = payData['numberOfPayments'].replace(' million', '&hairsp;M')
   res.locals.payNumberOfServices = payData['numberOfServices']
   res.locals.payNumberOfOrganisations = payData['numberOfOrganisations']
 
   const notifyData = await fetchData('https://www.notifications.service.gov.uk/features/performance.json', 'notifyDataCache')
 
-  res.locals.notifyTotalMsgs = (notifyData['total_notifications'] / 1e9).toFixed(1) + "B"
+  res.locals.notifyTotalMsgs = (notifyData['total_notifications'] / 1e9).toFixed(1) + "&hairsp;B"
   res.locals.notifyLive = notifyData['count_of_live_services_and_organisations']['services']
   res.locals.notifyOrgs = notifyData['count_of_live_services_and_organisations']['organisations']
 
