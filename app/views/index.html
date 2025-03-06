@@ -60,7 +60,7 @@
       <div class="gem-c-big-numbers">
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            {{ ((190002*2)/60/35) | round(0, "floor") }}
+            {{ ((formSubmissions *2 )/60/35) | round(0, "floor") }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -69,7 +69,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            194,732
+            {{ formSubmissions.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -78,7 +78,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            98
+            {{ formsPublished.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -87,7 +87,7 @@
         </div>
         <div class="gem-c-big-number govuk-!-margin-bottom-8">
           <span class="gem-c-big-number__value">
-            55
+            {{ formOrganisations.toLocaleString() }}
           </span>
           <span class="govuk-visually-hidden">&nbsp;</span>
           <span class="gem-c-big-number__label">
@@ -144,12 +144,12 @@
 
   {% block bodyEnd %}
     <script>
+      const period = 1 * 60 * 60 * 1000 // hours * minutes * seconds * milliseconds
       setTimeout(
         function(){
           window.location.reload();
         },
-        // hours * minutes * seconds * milliseconds
-        1 * 60 * 60 * 1000
+        period
       );
     </script>
   {% endblock %}
