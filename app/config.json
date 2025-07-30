@@ -1,3 +1,8 @@
 {
-  "serviceName": "Platforms and Services dashboard"
+  "serviceName": "Platforms and Services dashboard",
+  "plugins": {
+    "govuk-frontend": {
+    "rebrand": true
+    }
+  }
 }
