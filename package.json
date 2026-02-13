@@ -7,7 +7,7 @@
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "2.0.1",
     "govuk-frontend": "5.11.2",
-    "govuk-prototype-kit": "13.18.0",
+    "govuk-prototype-kit": "13.19.0",
     "memory-cache": "^0.2.0"
   }
 }
