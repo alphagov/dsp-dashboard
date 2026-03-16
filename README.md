@@ -1,5 +1,7 @@
 # Platforms and Services dashboard
 
+Can be found at https://dsp-dashboard-38e19dd42f71.herokuapp.com/
+
 Built using the [GOV.UK Prototype Kit](https://github.com/alphagov/govuk-prototype-kit).
 
 This is for displaying on internal screens.
